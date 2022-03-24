@@ -2,13 +2,22 @@ package day1;
 
 public class YouTube {
 //states
-    //home
-    //subscription
-    //sign in
-    //search
-    //trending
+    //likes
+    int likes;
+    //video length
+    float length;
     //category
-
+    String category;
+    //views
+    long views;
+    //comments
+    String comments;
+    //title
+    String title;
+    //channel
+ String channel;
+ //recomend
+    booleaan recomend;
 
 
     //behavior(functions)
