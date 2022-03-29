@@ -1,32 +1,50 @@
 package day1;
 
+import javax.print.attribute.standard.JobMessageFromOperator;
+import javax.swing.*;
+import java.util.Scanner;
 public class YouTube {
-//states
-    //likes
+    //states(variable)
     int likes;
-    //video length
-    float length;
-    //category
+    float videoLength;
     String category;
-    //views
     long views;
-    //comments
     String comments;
-    //title
     String title;
-    //channel
- String channel;
- //recomend
-    booleaan recomend;
+    String channel;
+    boolean recomend;
+    public static void streaming(){
+    }
+    public static void chat(){
 
+    }
+    public static void playMovie(){
+    }
+    public static void like(){
+        Scanner input = new Scanner(System.in);
+        System.out.println("enter the number of likes");
+        int likes=input.nextInt();
 
-    //behavior(functions)
+        if(likes>1000){
+            System.out.println("1K+ likes");}
+            else{
+                System.out.println("likes below 1k");}
+    }
 
-       //live streaming
-       //chat
-       //play movies/songs
-       //create channel
-      //like,dislike
+    public static void createChannel(){
+    }
+    public static void main(String[] args) {
+        YouTube ob = new YouTube();
+        ob.chat();
+       // YouTube.like();
+    }
 
+    /*behavior(functions)
+        live streaming
+       chat
+       play movies/songs
+       create channel
+        like,dislike
+*/
 
 }
