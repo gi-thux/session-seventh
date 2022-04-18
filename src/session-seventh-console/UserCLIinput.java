@@ -1,5 +1,5 @@
-package day11;
 
+import java.io.Console;
 import java.util.Scanner;
 
 public class UserCLIinput {
@@ -9,18 +9,18 @@ public class UserCLIinput {
         Scanner input = new Scanner(System.in);
         Scanner input1 = new Scanner(System.in);
 
-        //Console con= System.console();
+        Console con= System.console();
         System.out.println("Enter the userName");
-       // String userName = con.readLine();
-        String userName = input.next();
+        String userName = con.readLine();
+       // String userName = input.next();
 
                 System.out.println("Enter the password");
-       // char [] passwordArray=con.readPassword();
-       // String password= String.valueOf(passwordArray);
-       // System.out.println(password);
+        char [] passwordArray=con.readPassword();
+        String password= String.valueOf(passwordArray);
+        System.out.println(password);
 
 
-        String password= input.next();
+       // String password= input.next();
         if(!password.equals("admin123")){
             System.out.println("your password is wrong and you are not authorized to log in");
             System.exit(0);}
@@ -42,18 +42,6 @@ public class UserCLIinput {
 
         System.out.println("the percentage of "+ name + " is " + percentage+" %");
 
-        if(percentage>=80){
-            System.out.println("Passed in Distinction");}
-        else if(percentage>70 && percentage<80){
-            System.out.println("Passed in First Division");}
-            else if(percentage>50 && percentage<=70){
-                System.out.println("passed in Second Division");}
-        else{
-            System.out.println("fail");
-
-            }
-        }
-
         //String output= String.format("the percentage of %S is %.2 ",name,percentage);
        // System.out.println(output);
 
@@ -63,4 +51,4 @@ public class UserCLIinput {
 
     }
 
-
+}
